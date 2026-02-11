@@ -1,4 +1,4 @@
-package dev.nicolas.CadastroDeNinjas;
+package dev.nicolas.CadastroDeNinjas.Ninjas;
 
 import jakarta.persistence.*;
 
