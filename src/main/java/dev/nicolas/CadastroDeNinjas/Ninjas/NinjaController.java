@@ -4,7 +4,7 @@ import dev.nicolas.CadastroDeNinjas.Missoes.MissaoModel;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping
+@RequestMapping("/ninjas")
 public class NinjaController {
 
     @GetMapping("/boasvindas")
@@ -18,13 +18,13 @@ public class NinjaController {
         return "Ninja criada com sucesso!";
     }
     //show all ninjas
-    @GetMapping("/todos")
+    @GetMapping("/listar")
     public String mostrarTodosOsNinjas(){
         return "Todos";
     }
 
     //search ninja by id
-    @GetMapping("/todosID")
+    @GetMapping("/listarID")
     public String mostrarNinjaPorID(){
         return "Ninja ID";
     }
