@@ -17,7 +17,7 @@ public class MissaoController {
     }
 
     @PutMapping("/alterar")
-    public String alterarMissao(@RequestBody MissaoModel missaoModel){}
+    public String alterarMissao(){return "Missão alterada com sucesso!";}
 
     @DeleteMapping("/deletar")
     public String deletarMissao(){
