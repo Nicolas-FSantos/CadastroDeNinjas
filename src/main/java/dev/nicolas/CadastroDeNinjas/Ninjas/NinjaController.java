@@ -32,9 +32,9 @@ public class NinjaController {
     }
 
     //search ninja by id
-    @GetMapping("/listarID")
-    public String mostrarNinjaPorID(){
-        return "Ninja ID";
+    @GetMapping("/listar/{id}")
+    public NinjaModel listarNinjaPorId(@PathVariable Long id){
+        return ninjaService.listarNinjaPorId(id);
     }
     //modify ninja
     @PutMapping("/alterarID")
