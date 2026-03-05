@@ -22,7 +22,7 @@ public class NinjaService {
     //Lista por ID
     public NinjaModel listarNinjaPorId(Long id){
         Optional<NinjaModel> ninjaOptId= ninjaRepository.findById(id);
-        return ninjaOptId .orElse(null);
+        return ninjaOptId.orElse(null);
     }
 
     //Criar novo ninja
