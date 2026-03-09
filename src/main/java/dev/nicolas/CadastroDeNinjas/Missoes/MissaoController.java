@@ -32,9 +32,9 @@ public class MissaoController {
     @PutMapping("/alterar")
     public String alterarMissao(){return "Missão alterada com sucesso!";}
 
-    @DeleteMapping("/deletar")
-    public String deletarMissao(){
-        return "Deletado com sucesso!";
+    @DeleteMapping("/deletar/{id}")
+    public void deletarMissao(@PathVariable Long id){
+        missaoService.deletarMissao(id);
     }
 
 }
